@@ -14,7 +14,7 @@ public class CustomerServiceApplication {
         repositoryRestConfiguration.exposeIdsFor(Customer.class);
 		return args -> {
 
-			customerRepository.save(new Customer(null,"ENSET","contact@enset-media.ma"));
+			customerRepository.save(new Customer(null,"Enset","contact@enset-media.ma"));
 			customerRepository.save(new Customer(null,"FSTM","contact@fstm.ma"));
 			customerRepository.save(new Customer(null,"ENSAM","contact@ensam.ma"));
 			customerRepository.findAll().forEach(System.out::println);
